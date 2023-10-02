@@ -25,7 +25,8 @@ function Register() {
 
     useEffect(() => {
         if(isError) {
-           console.log(toast.error(message)) 
+          toast.error('User already exists')
+         
         }
     
         //Redirect when logged in
