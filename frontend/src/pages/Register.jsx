@@ -25,7 +25,7 @@ function Register() {
 
     useEffect(() => {
         if(isError) {
-            toast.error(message)
+           console.log(toast.error(message)) 
         }
     
         //Redirect when logged in
