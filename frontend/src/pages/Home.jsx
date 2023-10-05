@@ -12,8 +12,8 @@ function Home() {
             <Link to='/request-assets' className='btn btn-reverse btn-block'>
                 <FaQuestionCircle /> Request New Assets
             </Link>
-            <Link to='/dashboard' className='btn btn-block'>
-                <FaImages /> View My Assets
+            <Link to='/new-asset' className='btn btn-block'>
+                <FaImages /> Create New Asset
             </Link>
         </>
     )
