@@ -8,7 +8,7 @@ import BackButton from '../components/BackButton'
 
 function NewAsset() {
     const {user} = useSelector((state) => state.auth)
-    const {isLoading, isError, isSuccess, message} = useSelector((state) => state.asset)
+    const {isLoading, isError, isSuccess, message} = useSelector((state) => state.assets)
 
     const [name] = useState(user.name)
     const [email] = useState(user.email)  

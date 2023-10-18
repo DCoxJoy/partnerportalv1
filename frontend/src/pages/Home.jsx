@@ -9,11 +9,11 @@ function Home() {
                 <p>Choose from options below</p>
             </section>
 
-            <Link to='/request-assets' className='btn btn-reverse btn-block'>
+            <Link to='/new-asset' className='btn btn-reverse btn-block'>
                 <FaQuestionCircle /> Request New Assets
             </Link>
-            <Link to='/new-asset' className='btn btn-block'>
-                <FaImages /> Create New Asset
+            <Link to='/assets' className='btn btn-block'>
+                <FaImages /> View My Assets
             </Link>
         </>
     )

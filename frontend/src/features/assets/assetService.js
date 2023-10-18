@@ -14,8 +14,21 @@ const createAsset = async (assetData, token) => {
     return response.data
 }
 
+//Get user assets
+const getAssets = async (token) => {
+    const config = {
+        headers: {
+            Authorization: `Bearer ${token}`
+        }
+    }
+
+    const response = await axios.get(API_URL, config)
+    return response.data
+}
+
 const assetService = {
     createAsset,
+    getAssets,
 }
 
 export default assetService

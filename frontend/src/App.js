@@ -7,6 +7,7 @@ import Home from './pages/Home'
 import Login from './pages/Login'
 import Register from './pages/Register'
 import NewAsset from './pages/NewAsset'
+import Assets from './pages/Assets'
 
 
 function App() {
@@ -22,6 +23,9 @@ function App() {
             <Route path='/register' element={<Register />} />
             <Route path='/new-asset' element={<PrivateRoute />}>
               <Route path='/new-asset' element={<NewAsset />} />              
+              </Route>
+              <Route path='/assets' element={<PrivateRoute />}>
+              <Route path='/assets' element={<Assets/>} />              
               </Route>
           </Routes>
         </div>
